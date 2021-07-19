@@ -5,13 +5,19 @@ function ResultCont(props){
     return(
         <div className="cont">
             <div className="c1"> 
-                <h3> {console.log("this is author",props.author)}</h3>
-                <p> author </p>
+                <h3> {props.title} </h3>
+                <p> Author: {props.author}</p>
+                <p> Date Published: {props.date}</p>
+                <div className="red"> 
+                <a target="_blank" href={props.link}> <button > view </button></a> 
+                <button> save</button> 
+                </div>
+
 
             </div>
             <div className="c2">
-                <h4 id="gg"> image </h4>
-                <h4> description </h4>
+                <img id="gg" src={props.image}/>
+                <section> {props.description} </section>  
             </div>
         </div>
     )

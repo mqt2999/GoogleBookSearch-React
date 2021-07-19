@@ -1,4 +1,7 @@
-.cont{
+.Acont{
     margin:1%;
-    border: 1px black solid;
+    border:solid black 10px;
+}
+#resultTitle{
+    margin:2%;
 }

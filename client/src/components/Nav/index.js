@@ -5,9 +5,9 @@ function Nav() {
     <div className="navBox">
   <nav class="nav">
   <a className="nav-link active">Google Search</a>
-  <a className="nav-link active" href="#"> Search
+  <a className="nav-link active" href="/search"> Search
   </a>
-  <a className="nav-link" href="#">Saved</a>
+  <a className="nav-link" href="/saved">Saved</a>
   
 </nav>
 
