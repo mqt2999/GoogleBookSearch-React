@@ -1,6 +1,7 @@
 import React from "react"
 import "./styles.css"
 import ResultCont from "../ResultCont/index"
+
 function SearchContain (props){
    return( 
    <div className="Acont">

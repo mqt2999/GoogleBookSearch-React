@@ -3,6 +3,7 @@ import SearchBox from "../components/SearchBox/index"
 import API from "../utils/API"
 import SearchContain from "../components/SearchContain/index"
 import ResultCont from "../components/ResultCont/index"
+
 function Search() {
     const [title, setTitle] = useState("")
     const [books,setBooks] = useState([])
@@ -12,7 +13,7 @@ function Search() {
         loadBooks()
     },[])
     function loadBooks() {
-        API.getBooks("hatchet")
+        API.getBooks(title)
         .then(res =>  {setBooks(res.data.items)
             console.log("the books where got",res.data.items)
     
@@ -28,6 +29,9 @@ function Search() {
         event.preventDefault()
         loadBooks()
     }
+
+    
+   
     return(
         <div>
         <SearchBox handleInputChange={handleInputChange} formSubmit={formSubmit}/>

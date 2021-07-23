@@ -1,7 +1,25 @@
 import React from "react"
 import "./styles.css"
+import ViewBtn from "../viewBtn/index"
+import API from "../../utils/API"
 
 function ResultCont(props){
+
+    function saveBook(){
+        API.saveBook({
+            title:props.title,
+            author: props.author,
+            link:props.link,
+            image:props.image,
+            description:props.description
+        })
+        .then( res => alert("books saved"))
+        .catch(err => {
+            console.error(err)
+        })
+      
+      }
+
     return(
         <div className="cont">
             <div className="c1"> 
@@ -9,8 +27,8 @@ function ResultCont(props){
                 <p> Author: {props.author}</p>
                 <p> Date Published: {props.date}</p>
                 <div className="red"> 
-                <a target="_blank" href={props.link}> <button > view </button></a> 
-                <button> save</button> 
+                <ViewBtn link={props.link}/>
+                <button onClick={saveBook}> save</button> 
                 </div>
 
 
