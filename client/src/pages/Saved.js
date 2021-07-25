@@ -1,8 +1,12 @@
 import React from "react"
-
+import ResultCont from "../components/ResultCont/index"
+import SearchContain from "../components/SearchContain/index"
 function SavedBooks(){
     return(
-        <h2> hello world</h2>
-    )
+       <div> 
+           
+       </div>
+        
+    );
 }
 export default SavedBooks;
