@@ -1,10 +1,9 @@
 import React from "react"
-import ResultCont from "../components/ResultCont/index"
-import SearchContain from "../components/SearchContain/index"
+import SavedContainer from "../components/SavedContainer/index"
 function SavedBooks(){
     return(
        <div> 
-           
+           <SavedContainer/>
        </div>
         
     );

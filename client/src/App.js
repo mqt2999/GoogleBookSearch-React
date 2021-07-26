@@ -5,6 +5,7 @@ import Nav from "./components/Nav/index"
 import Jumbo from "./components/Jumbo/index"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import Footer from "./components/Footer/index"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
    component={Search}/>
    <Route exact path="/saved"
    component={Saved}/>
-    <h1> hello world </h1>
+    <Footer/>
     </>
     </Router>
   );
