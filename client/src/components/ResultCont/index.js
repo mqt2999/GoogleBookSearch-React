@@ -13,7 +13,7 @@ function ResultCont(props){
             image:props.image,
             description:props.description
         })
-        .then( res => alert("books saved"))
+        .then(res => res.json() )
         .catch(err => {
             console.error(err)
         })
